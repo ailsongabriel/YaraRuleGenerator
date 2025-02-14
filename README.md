@@ -1,6 +1,7 @@
 # YARA Rule Generator
 
-This script generates YARA rules based on user-provided strings and allows recursive directory searches.
+## 📖 About
+YARA Rule Generator is a Python-based tool designed to simplify the creation of YARA rules for malware analysis and threat detection. It allows users to define custom string-based detection rules, apply conditions (`any` or `all`), and search for encoded strings (such as base64). The generated rules can be used for scanning directories recursively, helping security professionals automate and enhance their detection workflows.
 
 ## 🚀 Features
 
