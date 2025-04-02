@@ -1,4 +1,5 @@
 import argparse
+import os
 
 def format_string(s, flag, index, hex_enabled):
   hex_string = ' '.join(f'{ord(c):02X}' for c in s) if hex_enabled else None
