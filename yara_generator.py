@@ -16,7 +16,7 @@ def yaraGen(strings, condition, output_file, hex_indexes):
       format_string(s[0], s[1], i, str(i) in hex_indexes) for i, s in enumerate(strings)
   ])
 
-  yara_rule = f"""rule {output_file} 
+  yara_rule = f"""rule {os.path.splitext(output_file)[0]} 
   {{
     strings:
       {defined_strings}
